@@ -1,0 +1,86 @@
+/* -----------------HTML Elements-------------- */
+body {
+  background: url('../img/background.jpg');
+  background-position: center;
+  background-color: beige;
+  margin-top: 60px;
+}
+table, td, th {
+  border: 1px solid;
+}
+table {
+  width: 60%;
+  border-collapse: collapse;
+}
+a{
+  color: white;
+}
+/* -----------------Classes-------------- */
+.details{
+  padding-left: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+}
+.graph{
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+/* -----------------Specific elements-------------- */
+#info{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  background-color: antiquewhite;
+}
+#wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#readings-info{
+  background-color: darkolivegreen; 
+  color: white; 
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  padding: 20px;
+  border-radius: 10px;
+}
+#readings-info>div{
+  width: 60%;
+}
+/* -----------------Spinner-------------- */
+.spinner {
+  /* change color here 
+  color: #f47e60;*/
+  color: greenyellow;
+}
+.spinner,
+.spinner:after {
+  box-sizing: border-box;
+}
+.spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.spinner:after {
+  content: " ";
+  display: block;
+  width: 320px;
+  height: 320px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6.4px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: spinner 1.2s linear infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

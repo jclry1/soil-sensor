@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Understanding the Sensor Readings</title>
+</head>
+<body>
+<div id="readings-info">
+<div>
+<a href="./index.html">Back to the graph</a>
+<h2>Soil Moisture</h2>  
+<p>Readings are gathered at 15-minute intervals, starting May 30th. I'll update them every few days.</p>
+<p>Soil moisture is plotted on the blue line in the top graph - - as the blue line goes up, it indicates a rising soil moisture.</p>
+<p>Values between 1340 kHz and 1400kHz - higher values indicate lower soil moisture. For that reason, the y-axis in the graph is reversed (higher values are lower on the axis). This makes it easier to read the graph at a glance. </p>
+<h4>How accurate are the readings?</h4>
+<p>The information from the sensor has not been calibrated against any verified reading but the table below is a rough guide taken from <a href="https://www.m2mgermany.de/shop/media/webshop_dl/Other/7059_Technical%20Reference%20Manual%20Tektelic%20Clover%20Agriculture.pdf?srsltid=AfmBOopVfFvGvV6wgoxbjv_imURV_7kXY6iVQQdRcrEIf0-V5DnOuvxD" target="_blank">this manual</a>.</p>
+<br>
+<table>
+  <thead>
+    <th>Gravimetric Water Content (GWC)</th>
+    <th>Frequency (kHz) Range</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wet
+        </td>
+      <td>1322-1341</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>1341-1346</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>1346-1351</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1351-1356</td>
+    </tr>
+    <tr>
+      <td>0.8</td>
+      <td>1361-1366</td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>1371-1376</td>
+    </tr>
+    <tr>
+      <td>0.4</td>
+      <td>1381-1386</td>
+    </tr>
+    <tr>
+      <td>0.2</td>
+      <td>1391-1396</td>
+    </tr>
+    <tr>
+      <td>Dry</td>
+      <td>1399-1402</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Temperature</h2>  
+<p>Temperature readings are recorded by a sensor inside the case of the unit. Because it's in full sun, it get's hotter than the actual ambient temperature. Therefore, high temp readings are obviously not accurate. On the lower end and on dull days, temperature should be accurate.</p>
+</div>
+</div>
+
+</body>
+</html>
