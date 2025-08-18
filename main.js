@@ -27,7 +27,8 @@ function displayData (readings){
     name: 'Soil Moisture',
     type: 'scatter',
     line: {
-      color: '#1a7beb'
+      color: '#1a7beb',
+      width: 1
     }
   };
   
@@ -38,7 +39,8 @@ function displayData (readings){
     yaxis: 'y2',
     type: 'scatter',
     line:{
-      color: '#ffcc66'
+      color: '#ffcc66', 
+      width: 1
     }
   };
 
@@ -47,7 +49,11 @@ function displayData (readings){
     y: relHumidity,
     name: 'Humidity',
     yaxis: 'y',
-    type: 'scatter'
+    type: 'scatter',
+    line: {
+      color: '#1a7beb',
+      width: 1
+    }
   };
 
   let trace4 = {
@@ -57,7 +63,8 @@ function displayData (readings){
     yaxis: 'y2',
     type: 'scatter',
     line:{
-      color: '#ffcc66'
+      color: '#ebc20c',
+      width: 1
     }
   };
   
@@ -100,7 +107,7 @@ function displayData (readings){
         y1: 1370,
         line: {
           color: '#f08490',
-          width: 4,
+          width: 2,
           dash: 'dashdot'
         },
         label: {
@@ -117,7 +124,7 @@ function displayData (readings){
         y1: 1335,
         line: {
           color: '#f08490',
-          width: 4,
+          width: 2,
           dash: 'dashdot'
         },
         label: {
